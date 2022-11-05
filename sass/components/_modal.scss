@@ -188,13 +188,16 @@ textarea::placeholder {
   justify-content: center;
   font-family: 'Roboto';
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
 
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
   transition: var(--time-function);
+  @media screen and (min-width: 1200px) {
+ font-size: 14px;}
+  
 }
 .chek-text span {
   margin-right: 8px;

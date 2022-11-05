@@ -711,7 +711,7 @@ input::placeholder {
 
 .modal {
   width: 300px;
-  height: 609px;
+  height: 750px;
   background-color: #ffffff;
   position: absolute;
   top: 50%;
@@ -924,11 +924,16 @@ textarea::placeholder {
   justify-content: center;
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   transition: var(--time-function);
+}
+@media screen and (min-width: 1200px) {
+  .chek-text {
+    font-size: 14px;
+  }
 }
 
 .chek-text span {
