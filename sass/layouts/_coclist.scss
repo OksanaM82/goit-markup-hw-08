@@ -1,0 +1,27 @@
+.people-soc-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
+
+.people-soc-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--soc-link-color);
+  transition: color var(--time-function), background-color var(--time-function);
+
+
+&:hover,
+&:focus {
+  background-color: var(--accent-text-color);
+  color: var(--hero-text-color);
+}}
+
+.people-soc-icon {
+  fill: currentColor;
+}}

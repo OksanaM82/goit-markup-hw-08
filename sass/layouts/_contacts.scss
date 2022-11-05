@@ -1,0 +1,27 @@
+.contacts {
+  display: flex;
+}
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contacts__link {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+  align-items: center;
+  transition: var(--time-function);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+
+  &:last-child {
+  margin-right: 0px;
+}
+.contacts &:hover,
+.contacts &:focus {
+  color: var(--accent-text-color);
+}
+}
