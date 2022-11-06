@@ -556,6 +556,16 @@ button {
     width: 210px;
   }
 }
+@media screen and (min-width: 768px) {
+  .clients-link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-link {
+    width: 170px;
+  }
+}
 .clients-link:hover, .clients-link:focus {
   border-color: var(--accent-text-color);
   color: var(--accent-text-color);

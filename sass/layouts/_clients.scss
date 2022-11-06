@@ -4,6 +4,12 @@
   @include mobile {
     width: 210px;
   }
+  @include tablet {
+    width: 226px;
+  }
+  @include desctop {
+    width: 170px;
+  }
   // width: 170px;
   height: 92px;
   border-radius: 4px;
