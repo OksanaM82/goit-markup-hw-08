@@ -541,6 +541,9 @@ button {
 }
 
 .clients-link {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
   width: 270px;
   height: 92px;
   border-radius: 4px;
@@ -571,10 +574,6 @@ button {
   color: var(--accent-text-color);
 }
 
-.clients-list {
-  padding-left: auto;
-  padding-right: auto;
-}
 @media screen and (min-width: 480px) {
   .clients-list {
     display: flex;

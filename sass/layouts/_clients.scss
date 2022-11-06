@@ -1,5 +1,9 @@
 .clients-link {
+  margin-left: auto;
+margin-right: auto;
+  margin-bottom: 30px;
   width: 270px;
+
 
   @include mobile {
     width: 210px;
@@ -27,8 +31,7 @@
 }
 
 .clients-list {
-  padding-left: auto;
-  padding-right: auto;
+  
   @include mobile {
      display: flex;
      flex-wrap: wrap;
