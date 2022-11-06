@@ -1,5 +1,10 @@
 .clients-link {
-  width: 170px;
+  width: 270px;
+
+  @include mobile {
+    width: 210px;
+  }
+  // width: 170px;
   height: 92px;
   border-radius: 4px;
   border: 1px solid var(--clients-border);
@@ -16,9 +21,15 @@
 }
 
 .clients-list {
-  display: flex;
+  padding-left: auto;
+  padding-right: auto;
+  @include mobile {
+     display: flex;
+     flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
+ justify-content: center;
+  }
+
 }
 .clients-icon {
   fill: currentColor;
