@@ -7,8 +7,8 @@
   font-size: 26px;
   line-height: 1.2;
   color: var(--accent-text-color);
-  margin-right: 93px;
-}
+  @include tablet {margin-right: 88px;};
+  @include desctop {margin-right: 93px;} }
 .logo-studio {
   font-family: var(--logo-font-family);
   font-weight: 700;

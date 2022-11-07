@@ -19,12 +19,14 @@
   </head>
   <body>
     <!-- Header -->
-     <!-- <header class="header">
+      <header class="header">
       <div class="container header-container">
         <nav class="nav">
           <a href="./index.html" class="logo">Web<span class="logo-studio">Studio</span> </a>
+          
           <ul class="nav__list">
             <li class="nav__item box-studio">
+            
               <a href="./index.html" class="link nav__link current">Студія</a>
             </li>
             <li class="nav__item">
@@ -50,9 +52,63 @@
             +38 096 111 11 11
           </a>
         </div>
+        <button type="button" class="memu-open-btn" data-menu-open>
+           <svg class="menu-icone" width="24" height="16">
+              <use href="./img/symbol-defs.svg#icon-menu"></use>
+            </svg> 
+          </button>
       </div>
+      
+        
+          <!-- Мобільне меню -->
+          <div class="mob-menu is-hidden" data-menu >
+            <div class="container">
+              <div  class="mob-menu_top"> <button type="button" class="mob-memu__close-btn" data-menu-close>
+           <svg class="menu-icone" width="19" height="19">
+              <use href="./img/symbol-defs.svg#icon-close_24px"></use>
+            </svg> 
+          </button>
+               <ul class="mob-menu__list">
+            <li class="mob-menu__item ">
+            
+              <a href="./index.html" class="link mob-menu__link current">Студія</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="./portfolio.html" class="link mob-menu__link"> Портфоліо </a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="" class="link mob-menu__link"> Контакти </a>
+            </li>
+          </ul>
+</div>
+        <div class="mob-contacts_bottom">
+           <div class="mob-contacts">
+          <a href="tel:+380961111111" class="link mob-contacts__tel">
+            
+            +38 096 111 11 11
+          </a>
+          <a href="mailto:nfo@devstudio.com" class="link mob-contacts__mail">
+            
+            info@devstudio.com
+          </a>
+
+          
+        </div>
+        <ul class="mob-coc-list">
+          <li class="mob-coc-item"> <a href="" class="mob-coc-link"> Instagram</a>
+            
+          </li>
+          <li class="mob-coc-item"> <a href="" class=" link mob-coc-link" >Twitter</a> </li>
+          <li class="mob-coc-item"> <a href="" class="link mob-coc-link"> Facebook</a> </li>
+          <li class="mob-coc-item"> <a href="" class="link mob-coc-link"> LinkedIn</a>
+          </li>
+        </ul></div>
+      </div>
+            </div>
+           
+          </div>
     </header>
-    <main>  -->
+    <main>  
       <!-- Головна інформація -->
 
        <section class="hero">
@@ -266,22 +322,21 @@
             <li class="people-item">
               <picture>
                 <source
-                srcset="./img/mt.jpg 1x,
-              ./img/mt2x.jpg 2x"
+                srcset="./img/or.jpg 1x,
+              ./img/or2x.jpg 2x"
               media="(min-width: 1200px)"/>
                <source
-                srcset="./img/mttablet.jpg 1x,
-              ./img/mttablet2x.jpg 2x"
+                srcset="./img/ortablet.jpg 1x,
+              ./img/ortablet2x.jpg 2x"
               media="(min-width: 768px)"/>
                <source
-                srcset="./img/mtmobil.jpg 1x,
-              ./img/mtmobil2x.jpg 2x"
+                srcset="./img/ormobil.jpg 1x,
+              ./img/ormobil2x.jpg 2x"
               media="(min-width: 480px)"/>
-              <img srcset= "./img/mt.jpg 1x,
-              ./img/mt2x.jpg 2x"
-              
-               src="./img/mt.jpg" alt=" Микола Тарасов" width="450" height="460" />
+              <img  srcset="./img/or.jpg 1x,
+              ./img/or2x.jpg 2x" src="./img/or.jpg" alt="Ольга Рєпіна" width="450" height="460" />
               </picture>
+              
               
 
               <div class="people">
@@ -323,21 +378,21 @@
             <li class="people-item">
               <picture>
                 <source
-                srcset="./img/me.jpg 1x,
-              ./img/me2x.jpg 2x"
+                srcset="./img/or.jpg 1x,
+              ./img/or2x.jpg 2x"
               media="(min-width: 1200px)"/>
                <source
-                srcset="./img/metablet.jpg 1x,
-              ./img/metablet2x.jpg 2x"
+                srcset="./img/ortablet.jpg 1x,
+              ./img/ortablet2x.jpg 2x"
               media="(min-width: 768px)"/>
                <source
-                srcset="./img/memobil.jpg 1x,
-              ./img/memobil2.jpg 2x"
+                srcset="./img/ormobil.jpg 1x,
+              ./img/ormobil2x.jpg 2x"
               media="(min-width: 480px)"/>
-              <img srcset= "./img/me.jpg 1x,
-              ./img/me2x.jpg 2x"
-              src="./img/me.jpg" alt="Михайло Єрмаков" width="450" height="460" />
+              <img  srcset="./img/or.jpg 1x,
+              ./img/or2x.jpg 2x" src="./img/or.jpg" alt="Ольга Рєпіна" width="450" height="460" />
               </picture>
+              
               
 
               <div class="people">
@@ -581,5 +636,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html> 

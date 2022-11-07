@@ -1,13 +1,29 @@
 .contacts {
-  display: flex;
+  display: none;
+  @include tablet {display: block;}
+   @include desctop {
+   display: flex;}
 }
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 .contacts__link {
+  @include tablet {display: flex;
+  align-self: start;;
+  
+  margin-bottom: 10px;
+  align-items: center;
+  transition: var(--time-function);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+@include desctop {
   display: flex;
   justify-content: center;
+  margin-bottom: 0px;
   margin-right: 30px;
   align-items: center;
   transition: var(--time-function);
@@ -16,6 +32,11 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+  &:last-child {
+  margin-right: 0px;
+} }
+  
 
   &:last-child {
   margin-right: 0px;

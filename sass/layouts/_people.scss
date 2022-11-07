@@ -19,8 +19,8 @@
   width: 320px;
   
 @include mobile {width: 450px;}
-@include tablet { width: calc((100% - 60px) / 2)
-};
+@include tablet { width: calc((100% - 60px) / 2);
+}
 @include desctop { width: calc((100% - 120px) / 4);}
   // width: 270px;
   background: #ffffff;
