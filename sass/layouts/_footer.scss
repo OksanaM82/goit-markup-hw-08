@@ -1,13 +1,46 @@
+
 .footer {
   background-color: var(--accent-background-color);
   padding: 60px 0px;
 }
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  display: block;
+  
+ 
+  @include desctop {
+    display: flex;
+   align-items: baseline;
+  }
 }
-/* .footer-list{
-    } */
+.footer-conect {
+  display: block;
+  @include tablet {
+     display: flex;
+   align-items: baseline;
+   justify-content: center;
+   gap: 165px;
+
+  }
+}
+ .footer-list{
+  display: block;
+  text-align: center;
+  @include desctop {
+    text-align: start;
+  }
+    } 
+    .footer-box{
+    display: block; 
+    margin-bottom: 60px; 
+    }
+    .footer-logo
+    { text-align: center;
+      >.logo{margin-right: 0px;}
+      @include desctop {
+        text-align: start;
+      }
+    }
+    
 .logo-studio-footer {
   padding-right: 0px;
   font-family: var(--logo-font-family);
@@ -17,6 +50,7 @@
   color: var(--hero-text-color);
 }
 .link-address {
+  
   padding-right: 0px;
   margin-top: 20p;
   margin-bottom: 9px;
@@ -29,9 +63,6 @@
 .footer &:focus {
   color: var(--accent-text-color);
 }
-}
-.nav-list {
-  margin-bottom: 60px;
 }
 
 
@@ -52,7 +83,8 @@
 }
 
 .footer-item {
-  display: block;
+  
+
   margin-bottom: 9px;
   &:last-child {
   margin-bottom: 0px;
@@ -60,26 +92,36 @@
 }
 
 .footer-soc-container {
+
+  margin-bottom: 60px;
+  @include desctop {
+    display: block;
   margin-left: 70px;
+margin-right: 93px;}
+ 
 }
 .foter-soc-title {
+  text-align: center;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--hero-text-color);
   margin-bottom: 20px;
+  @include desctop {
+    text-align: start;
+  }
 }
 .footer-soc-list {
   display: flex;
-  justify-content: center;
+   justify-content: center;
   gap: 10px;
 }
 .footer-soc-icon {
   fill: var(--hero-text-color);
 }
 .footer-soc-link {
-  display: block;
+  
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -97,9 +139,15 @@
 
 
 .subscription-box {
-  margin-left: auto;
+  text-align: center;
+  @include desctop {
+    text-align: start;
+  }
+  
+  
 }
 .subscription-item {
+  
   margin-bottom: 20px;
   font-family: 'Roboto';
   font-weight: 700;
@@ -110,10 +158,15 @@
   color: var(--hero-text-color);
 }
 .online-form {
-  display: flex;
+  @include desctop {
+    display: flex;
+  }
+
 }
 .online-input {
-  width: 358px;
+  
+  margin-bottom: 20px;
+  width: 300px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -126,6 +179,8 @@
   outline: none;
   border: 1px solid var(--button-hero-focus-color);
 }
+@include mobile {width: 450px;}
+@include desctop  { width: 358px;}
 }
 
 .colortext {
@@ -140,9 +195,12 @@ input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 .online-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
   width: 200px;
   height: 50px;
   background-color: var(--button-hero-background-color);

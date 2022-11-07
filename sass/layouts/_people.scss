@@ -1,5 +1,5 @@
 .people-list {
- 
+
   @include tablet {
       display: flex;
       flex-wrap: wrap;
@@ -15,7 +15,10 @@
 }
 
 .people-item {
-  margin-bottom: 30px;
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+margin-bottom: 30px;
   width: 320px;
   
 @include mobile {width: 450px;}
