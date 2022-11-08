@@ -1359,7 +1359,6 @@ textarea::placeholder {
   padding-left: 10px;
   padding-right: 10px;
 }
-
 .mob-coc-item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
