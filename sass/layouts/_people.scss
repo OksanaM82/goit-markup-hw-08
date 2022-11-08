@@ -1,15 +1,16 @@
 .people-list {
 
+
   @include tablet {
       display: flex;
       flex-wrap: wrap;
-   gap: 30px;
+   
  justify-content: center;
 
   }
   @include desctop {
     display: flex;
-   gap: 30px;
+   
  justify-content: center;
   }
 }
@@ -23,8 +24,11 @@ margin-bottom: 30px;
   
 @include mobile {width: 450px;}
 @include tablet { width: calc((100% - 60px) / 2);
+  gap: 30px;
 }
-@include desctop { width: calc((100% - 120px) / 4);}
+@include desctop { width: calc((100% - 120px) / 4)
+  ;
+gap: 30px;}
   // width: 270px;
   background: #ffffff;
 
