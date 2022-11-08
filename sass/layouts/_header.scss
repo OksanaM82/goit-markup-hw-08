@@ -2,18 +2,23 @@
   display: flex;
   align-items: center;
   position: relative;
+  height: 60px;
+  @include tablet {
+    height: 80px;
+  }
 
 }
 
 
 /* Site-nav */
 .nav__item {
-  margin-right: 50px;
-  &:last-child {
-    @include tablet{margin-right:90px};
-    @include desctop
-  {margin-right: 314px;}
-}
+  &:not(:last-child) {margin-right: 32px;}
+//   margin-right: 50px;
+//   &:last-child {
+//     @include tablet{margin-right:90px};
+//     @include desctop
+//   {margin-right: 314px;}
+// }
 }
 
 .nav {
@@ -30,7 +35,7 @@
 
 .nav__link {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 28px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;

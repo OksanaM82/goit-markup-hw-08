@@ -20,7 +20,6 @@
  margin-left: auto;
  margin-right: auto;
 margin-bottom: 30px;
-  width: 320px;
   
 @include mobile {width: 450px;}
 @include tablet { width: calc((100% - 60px) / 2);

@@ -9,6 +9,7 @@ margin-right: auto;
 
 
   @include mobile {
+    margin-top: 0px;
     width: 210px;
   }
   @include tablet {

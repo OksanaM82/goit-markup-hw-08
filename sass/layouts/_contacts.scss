@@ -1,4 +1,5 @@
 .contacts {
+  margin-left: auto;
   display: none;
   @include tablet {display: block;}
    @include desctop {

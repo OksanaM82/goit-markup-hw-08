@@ -9,9 +9,10 @@
 .mob-menu{ 
   position: fixed;
   top: 0px;
+  left: 0%;
   background-color: #ffffffff;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -33,7 +34,7 @@ margin-left: auto;
     fill: var(--accent-text-color);
   }
 .mob-menu__list { 
-  margin-bottom: px;
+
 }
 .mob-menu__item:not(:last-child)
 {
@@ -72,10 +73,9 @@ margin-bottom: 64px;
 }
 .mob-coc-list{
   
-  @include mobile {
 display: flex;
-  gap: 10px;
-  }
+  row-gap: 10px;
+  flex-wrap: wrap;
 
 }
 .mob-coc-item{
@@ -84,8 +84,7 @@ display: flex;
 }
 .mob-coc-item:not(:last-child)
 
-{@include mobile {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);}}
+ { border-right: 1px solid rgba(33, 33, 33, 0.2);}
 
 .mob-coc-link{font-weight: 500;
 font-size: 18px;
@@ -95,3 +94,4 @@ letter-spacing: 0.02em;
 
 color: #2196F3;
 }
+.mob-menu_studio {color: var(--accent-text-color);}
