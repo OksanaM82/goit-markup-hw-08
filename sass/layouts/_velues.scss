@@ -34,6 +34,7 @@ width: 450px;};
   background-color: #f5f4fa;
   display: flex;
   margin-bottom: 30px;
+  &:last-child {margin-bottom: 0px} ;
   align-items: center;
   justify-content: center;
 

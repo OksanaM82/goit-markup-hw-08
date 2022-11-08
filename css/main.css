@@ -445,6 +445,9 @@ button {
   align-items: center;
   justify-content: center;
 }
+.values__fon:last-child {
+  margin-bottom: 0px;
+}
 
 /* .values__icon {
 
@@ -598,6 +601,7 @@ button {
 }
 
 .clients-link {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -610,6 +614,9 @@ button {
   justify-content: center;
   color: var(--clients-border);
   transition: color var(--time-function), border-color var(--time-function);
+}
+.clients-link:last-child {
+  margin-bottom: 0px;
 }
 @media screen and (min-width: 480px) {
   .clients-link {
