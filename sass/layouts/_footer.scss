@@ -23,10 +23,12 @@
   }
 }
  .footer-list{
+
   display: block;
   text-align: center;
   @include desctop {
     text-align: start;
+    gap: 0px;
   }
     } 
     .footer-box{
@@ -94,10 +96,10 @@
 .footer-soc-container {
 
   margin-bottom: 60px;
-  @include desctop {
-    display: block;
-  margin-left: 70px;
-margin-right: 93px;}
+//   @include desctop {
+//     display: block;
+//   margin-left: 70px;
+// margin-right: 93px;}
  
 }
 .foter-soc-title {
@@ -142,6 +144,7 @@ margin-right: 93px;}
   text-align: center;
   @include desctop {
     text-align: start;
+    margin-left: auto;
   }
   
   

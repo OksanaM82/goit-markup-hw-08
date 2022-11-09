@@ -12,13 +12,15 @@
 
 /* Site-nav */
 .nav__item {
-  &:not(:last-child) {margin-right: 32px;}
+  &:not(:last-child) {margin-right: 32px;
+  @include desctop {margin-right:50px; };};
 //   margin-right: 50px;
 //   &:last-child {
 //     @include tablet{margin-right:90px};
 //     @include desctop
 //   {margin-right: 314px;}
 // }
+
 }
 
 .nav {
