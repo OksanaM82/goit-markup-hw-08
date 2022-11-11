@@ -10,10 +10,13 @@
   border-radius: 2px;
 }
 .container-buttons {
+  // margin-right: 124px;
   margin-bottom: 50px;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  justify-content: center;
+  justify-content: flex-start;
+  // justify-content: center;
 }
 .current {
   color: var(--accent-text-color);
@@ -26,7 +29,8 @@
 
   font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
+  // font-size: 16px;
   line-height: 1.62;
   text-align: center;
   color: var(--title-text-color);
