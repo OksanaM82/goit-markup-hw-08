@@ -821,7 +821,6 @@ button {
   .subscription-box {
     text-align: start;
     margin-left: auto;
-    align-self: center;
   }
 }
 
@@ -1208,13 +1207,12 @@ textarea::placeholder {
 }
 
 .container-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 15px;
   margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  row-gap: 15px;
+  justify-content: center;
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
