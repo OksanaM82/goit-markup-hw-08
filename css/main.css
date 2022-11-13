@@ -682,7 +682,7 @@ button {
     display: flex;
     align-items: baseline;
     justify-content: center;
-    gap: 165px;
+    gap: 80px;
   }
 }
 
@@ -700,6 +700,11 @@ button {
 .footer-box {
   display: block;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    margin-bottom: 0px;
+  }
 }
 
 .footer-logo {
@@ -733,6 +738,9 @@ button {
   color: var(--hero-text-color);
   transition: var(--time-function);
 }
+.link-address:last-child {
+  margin-bottom: 0px;
+}
 .footer .link-address:hover, .footer .link-address:focus {
   color: var(--accent-text-color);
 }
@@ -760,6 +768,11 @@ button {
 
 .footer-soc-container {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc-container {
+    margin-bottom: 0px;
+  }
 }
 
 .foter-soc-title {
@@ -808,6 +821,7 @@ button {
   .subscription-box {
     text-align: start;
     margin-left: auto;
+    align-self: center;
   }
 }
 
@@ -839,6 +853,11 @@ button {
   margin-right: 12px;
   padding-left: 16px;
   transition: var(--time-function);
+}
+@media screen and (min-width: 1200px) {
+  .online-input {
+    margin-bottom: 0px;
+  }
 }
 .online-input:focus {
   outline: none;
@@ -1189,17 +1208,14 @@ textarea::placeholder {
 }
 
 .container-buttons {
-  margin-right: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
   margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   justify-content: center;
-}
-@media screen and (min-width: 480px) {
-  .container-buttons {
-    margin-right: 124px;
-  }
 }
 @media screen and (min-width: 768px) {
   .container-buttons {
@@ -1223,7 +1239,7 @@ textarea::placeholder {
 }
 
 .portfolio-btn {
-  padding: 6px 22px;
+  padding: 6px 25px;
   border-radius: 4px;
   border-style: none;
   font-family: inherit;
